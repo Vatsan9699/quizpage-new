@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div class="title">Computer Quiz</div>
+        <div id="question" class="question"></div>
+
+        <label class="option">
+            <input type="radio" name="option" value="0"> <!-- Updated value -->
+            <span id="option1"></span> 
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="1"> <!-- Updated value -->
+            <span id="option2"></span> 
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="2"> <!-- Updated value -->
+            <span id="option3"></span> 
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="3"> <!-- Updated value -->
+            <span id="option4"></span> 
+        </label>
+
+        <button id="nextQuestion" type="button" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+    </div>
+
+    <div id="result" class="container result" style="display: none;">
+        <div id="score"></div>
+        <button id="restartButton" type="button" onclick="restartGame();" style="display:none;">Restart</button>
+    </div>
+
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>
